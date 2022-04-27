@@ -1,0 +1,17 @@
+h2 {    /*Обращение к селектору тега*/
+    color: red;
+    background-color: green;
+}
+
+#first {    /*Обращение к идентификатору*/
+    background-color: brown;
+}
+
+.second {    /*Обращение к селектору класса*/
+    background-color: blue;
+}
+
+p {
+    color: blue;
+    background-color: orange;
+}

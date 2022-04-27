@@ -1,0 +1,36 @@
+section {
+    margin: 20px;
+}
+
+.container {
+    width: 1110px;
+    background-color: brown;
+    margin: 0 auto;    
+}
+
+.block {    
+    width: 255px;
+    display: inline-block;
+    margin-left: 30px;
+    background: bisque;
+    margin-right: -4px;
+    /*margin: 30px; - со всех сторон внешний отступ 30px*/
+    /*margin: 20px 40px; - с верху и с низу внешний отступ по 20px, с права и с лева внешний отступ 40px*/
+    /*margin: 20px 40px 35px 15px; - с верху 20px, с права 40px, с низу 35px, с лева 15px*/
+}
+
+.margin {
+    margin-left: 0;
+}
+
+h2 {    
+    font-size: 48px;    /*размер шрифта*/
+    font-weight: 800;    /*толщина шрифта*/
+    color: #18191F;
+}
+
+p {   
+    font-size: 18px;
+    font-weight: 500;
+    color: #18191F;
+}

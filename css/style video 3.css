@@ -1,0 +1,75 @@
+/* Так шрифты подключаются медленней */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap'); */
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Verdana', sans-serif; */
+    color: #18191f;
+    box-sizing: border-box; /* К объекту не будет прибавляться размер margin, padding или border */
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+img {
+    margin-bottom: -5px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1110px;
+}
+
+.headline-img {
+    width: 445px;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+    margin-bottom: 53px;
+}
+
+.headline-img__title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.headline-description {
+    width: 635px;
+    display: inline-block;    
+    margin-left: 30px;
+    vertical-align: middle;
+    margin-top: 110px;
+}
+
+.headline-description__blocks {
+    background-color: #f1e4ff;    
+    padding: 48px 80px;
+}
+
+.headline-description__icon {
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.headline-description__text {
+    display: inline-block;
+    width: 299px;
+    vertical-align: middle;
+    margin-left: 80px;
+}
+
+.headline-description__text h3 {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px;    
+}
+
+.headline-description__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
