@@ -1,0 +1,241 @@
+body {    
+    font-family: 'Manrope', sans-serif;    
+    color: #18191f;
+    box-sizing: border-box; /* К объекту не будет прибавляться размер margin, padding или border */
+
+    /* .block-absolute6 */
+    /* padding: 20px;
+    border: 1px dotted #999999;
+    margin: 10px;
+    position: relative; */
+
+    padding: 20px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.outline {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px dotted #666666;
+}
+
+.column {
+    display: inline-block;  /* Это значение display используют, чтобы отобразить в одну строку блочные элементы, в том числе разных размеров. */
+}
+
+/*---------------------------------------------------------------*/
+
+.block2 {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+.block-shadow {
+    background-color: #cccccc;
+}
+
+.block-relative {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+    /* Относительное позиционирование.
+    Положение элемента устанавливается относительно его исходного места.
+    Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения. */
+    position: relative;
+    bottom: 20px;   /* Работают только px */
+    left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+/*---------------------------------------------------------------*/
+
+.block3 {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+/* Абсолютное позиционирование.
+Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+Положение элемента задаётся свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента.
+Так, если у родителя значение position установлено как static или родителя нет, то отсчёт координат ведётся от края окна браузера.
+Если у родителя значение position задано как relative, то отсчёт координат ведётся от края родительского элемента. */
+.block-absolute {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 10%;   /* Работают % */
+    width: 100px;   /* Если высота и ширина не указаны явно, то его ширина и высота будет складываться из его содержимого. */
+    height: 100px;
+}
+
+/*---------------------------------------------------------------*/
+
+.block4 {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+.parent {
+    border: 3px dotted #000;
+    position: relative; /* Если родителю задать position: relative; то .block-absolute4 будет позиционироваться относительно родительского блока */
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.block-absolute4 {
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 0%;    /* У абсолютно позиционированного элемента могут быть и отрицательные значения */
+    right: 0%;
+}
+
+/*---------------------------------------------------------------*/
+
+.block5 {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+.parent5 {
+    border: 3px dotted #000;
+    position: relative; /* Если родителю задать position: relative; то .block-absolute4 будет позиционироваться относительно родительского блока */
+}
+
+.inline-absolute {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------------------------------------------------*/
+
+.block-1 {
+    min-height: 100px;
+    padding: 10px;
+    background-color: #3a78a1;
+    position: relative;
+}
+
+.block-2 {
+    min-height: 100px;
+    padding: 10px;
+    background-color: #27ae60;
+    position: relative;
+}
+
+.block-absolute6 {
+    padding: 10px;
+    background-color: #e74c3c;
+    opacity: 0.8;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*---------------------------------------------------------------*/
+
+.block7 {
+    margin: 10px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+.inline-absolute7 {
+    background-color: #e74c3c;
+    opacity: .8;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+/*---------------------------------------------------------------*/
+/* Фиксированное позиционирование.
+По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами
+left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. */
+
+.block8 {
+    min-height: 190px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+}
+
+.block-fixed {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: fixed;
+    left: 10px; /* Можно также задать в % и размер будет меняться в зависимости от размера экрана */
+    top: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+/*---------------------------------------------------------------*/
+/* z-index */
+
+.parent9 {
+    position: relative;
+}
+
+.block9 {
+    min-height: 190px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3a78a1;
+    position: relative;
+    z-index: 22;
+}
+
+.block-fixed9 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 0; 
+}
+
+.block9_2 {
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
