@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, p {
-    margin: 0 auto;
+    margin: 0;
 }
 
 .container {
@@ -210,6 +210,7 @@ left, top, right и bottom точке на экране и не меняет с�
 
 .parent9 {
     position: relative;
+    padding: 30px;
 }
 
 .block9 {
@@ -218,8 +219,6 @@ left, top, right и bottom точке на экране и не меняет с�
     padding: 10px;
     color: #ffffff;
     background-color: #3a78a1;
-    position: relative;
-    z-index: 22;
 }
 
 .block-fixed9 {
@@ -230,12 +229,18 @@ left, top, right и bottom точке на экране и не меняет с�
     padding: 10px;
     color: #ffffff;
     background-color: rgba(255, 0, 0, 0.5);
-    z-index: 0; 
+    z-index: -1; /* z-index имеет только целые значения без px и % */
+}
+
+.block9_1 {    
+    position: relative;
+    z-index: 1;    
 }
 
 .block9_2 {
     background: green;
-    position: absolute;
+    position: absolute;    
     right: 0;
     top: 0;
+    z-index: 0;
 }
