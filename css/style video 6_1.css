@@ -1,0 +1,22 @@
+li::before {
+    content: "¶ "   /* Добавляем желаемый символ перед элементом списка */
+}
+
+li {
+    list-style: none;   /* Убираем исходные маркеры */
+}
+
+.my-paragraph {
+    padding: 20px;
+    border: 4px dashed lightgray
+}
+
+.my-paragraph::before {
+    content: 'This is before!';
+    color: hotpink;
+}
+
+.my-paragraph::after {
+    content: 'This is after!';
+    color: steelblue;
+}
