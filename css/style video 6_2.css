@@ -9,22 +9,25 @@ h1, h2, h3, h4, p {
 }
 
 .headline {
-    padding: 48px 0;
+    padding: 133px 0 144px 0;
 }
 
 .container {
     max-width: 989px;
-    margin: 0 auto;
-    background-color: brown;
+    margin: 0 auto;    
 }
 
 .headline-img {
     position: relative; /* Относительное позиционирование */
+    width: 395px;
+    height: 391px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
 }
 
-img {
+img {    
     position: relative;
-    z-index: 1;
 }
 
 .headline-img::before {
@@ -34,6 +37,82 @@ img {
     height: 540px;
     background-color: #d5fafc;
     position: absolute;
-    z-index: 0;
-    border-radius: 50%;
+    top: 50%;
+    margin-top: -270px;
+    right: 50%;
+    margin-right: -270px;
+    border-radius: 270px;
+}
+
+.headline-description {
+    max-width: 444px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 150px;
+}
+
+.headline-description__subtitle {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.headline-description__title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.headline-description__text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    line-height: 32px;
+}
+
+button, a {
+    background-color: transparent;
+    color: #8c30f5;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none; 
+    border: 1px solid #8c30f5;
+    padding: 12px 24px;
+    border-radius: 48px;
+    text-decoration: none;  /* Убрать нижнее подчеркивание для ссылки */
+}
+
+button:hover {
+    color: #6717c2;
+    border-color: #6717c2;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    color: #410a80;
+    border-color: #410a80;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+svg path {
+    fill: #8c30f5;  /* Цвет */
+    /* stroke: purple; */ /* Обводка */
+}
+
+button:hover svg path {
+    fill: #6717c2;
+}
+
+button:focus svg path {
+    fill: #410a80;
+}
+
+button span {
+    background-image: url(../img/arrow.svg);
+    width: 22px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;   /* Чтоб arrow.svg не повторялся */
 }
